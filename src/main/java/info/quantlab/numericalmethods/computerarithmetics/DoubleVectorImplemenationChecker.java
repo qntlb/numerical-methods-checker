@@ -5,7 +5,7 @@ import java.lang.reflect.InvocationTargetException;
 
 public class DoubleVectorImplemenationChecker {
 
-	boolean check(Class<?> theClass) {
+	public static boolean check(Class<?> theClass) {
 		if(!DoubleVector.class.isAssignableFrom(theClass)) {
 			System.out.println("Your class does not implement the interface " + DoubleVector.class.getName());
 			return false;
@@ -32,7 +32,7 @@ public class DoubleVectorImplemenationChecker {
 		return checkImplementation(vector);
 	}
 
-	private boolean checkImplementation(DoubleVector vector) {
+	private static boolean checkImplementation(DoubleVector vector) {
 		return vector.sum() == 6;
 	}
 }
