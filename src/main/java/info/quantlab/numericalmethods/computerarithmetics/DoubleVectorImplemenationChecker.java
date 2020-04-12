@@ -29,6 +29,7 @@ public class DoubleVectorImplemenationChecker {
 			return false;
 		}
 
+		System.out.println("We could create an object implementing the required interface. Testing the object.");
 		return checkImplementation(vector);
 	}
 
